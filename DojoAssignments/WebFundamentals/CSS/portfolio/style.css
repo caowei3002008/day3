@@ -1,0 +1,210 @@
+#title{
+	float: left;
+	margin-top: 15px;
+	margin-left: -15px;
+	font-family: fantasy;
+	font-size: 150%;
+	font-weight: 900;
+}
+#title2{
+	float: right;
+	margin-right: 36px;
+}
+#header{
+	width: 930px;
+	height:60px;
+	background-color: #F8F8F8;
+	position: relative;
+	top:-17px;
+
+}
+
+#wallPaper{
+	background-color: #6E5864;
+	width: 970px;
+	height: 880px;
+	position: relative;
+	top:-38px;
+}
+
+#personImage{
+	width: 410px;
+	height:260px;
+	border: 5px solid #A7A6AC;
+	position: relative;
+	top:15px;
+	left: 20px;
+}
+#box1{
+	width: 490px;
+	height: 270px;
+	background-color: #E3D6E0;
+	position: relative;
+	top: -273px;
+	left: 463px;
+}
+
+#descriptionP1, #descriptionP2{
+	margin-top: 8px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 106%;
+}
+#descriptionP2{
+	margin-top:10px; 
+}
+#about{
+	background-color: #A7A6AC;
+	height: 40px;
+	font-size: 60%;
+
+
+}
+#about1{
+	position: relative;
+	top: 10px;
+	left: 10px;
+	color: white;
+
+}
+#descriptionContinue{
+	color: black;
+	position: relative;
+	left: 20px;
+	bottom: 8px;
+}
+
+#box2,#box3,#box4{
+	width: 300px;
+	height:540px;
+	background-color: #E3D6E0;
+	}
+
+#laModelImage, #familyContactsImage,#fiveElevenImage{
+	width: 300px;
+	height: 150px;
+	position: relative;
+	top: -22px;
+}
+
+#box2{
+	position: absolute;
+	top: 310px;
+	left: 20px;
+}
+
+#box3{
+	position: absolute;
+	top: 310px;
+	left: 337px;
+}
+
+#box4{
+	position: absolute;
+	top: 310px;
+	left: 653px;
+}
+.title3{
+	width: 300px;
+	height: 40px;
+	background-color: #A7A6AC;
+	position: relative;
+	top: -22px;
+}
+#laMode,#familyContacts,#fiveEleven{
+	
+	color: white;
+	
+	font-size: 130%;
+	position: relative;
+	left: 10px;
+	top: 8px;
+
+}
+#laModeDescription,#familyContactsDescription,#fiveElevenDescription{
+	position: relative;
+	top: -35px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: justify;
+	font-size: 90%;
+
+}
+.technologies1{
+	width: 300px;
+	height: 40px;
+	background-color: #A7A6AC;
+	position: absolute;
+	top: 330px;
+
+}
+#t1,#t2,#t3{
+
+	color: white;
+	margin-top: 5px;
+	font-size: 130%;
+	margin-left: 10px;
+}
+
+.skillsIcon{
+	width: 50px;
+	height: 50px;
+
+}
+#skill1,#skill2,#skill3{
+	position: absolute;
+	top: 375px;
+
+}
+.submitButton{
+	width: auto;
+	height: 20px;
+	background-color: green;
+	color: white;
+	position: absolute;
+	top: 500px;
+	font-size: 80%;
+	border-radius: 5px;
+	border: 1px solid black;
+	/*margin-left: 100px;*/
+	/*text-align: center;*/
+}
+#t11{
+	margin-left: 120px;
+	margin-right: 120px;
+}
+#t22{
+	margin-left: 102px;
+	margin-right: 102px;
+}
+#t33{
+	margin-left: 115px;
+	margin-right: 115px;
+}
+.bottomIcon{
+	width: 15px;
+	height: 15px;
+}
+#foot{
+	width:970px; 
+	height:70px;
+	background-color: #F8F8F8;
+	position: absolute;
+	bottom: -305px;
+	
+}
+#p1{
+	position: relative;
+	left: 380px;
+	bottom: 10px;
+}
+
+#p2{
+		position: relative;
+	left: 325px;
+	bottom: 20px;
+
+}
+.icon1{
+	color: black;
+}
