@@ -1,0 +1,113 @@
+body{
+	width: 1000px;
+
+}
+.topBar{
+	width: 1000px;
+	height: 100px;
+	background-color: blue;
+	overflow: hidden;
+}
+.leftAd{
+	width: 205px;
+	height: 800px;
+		background-color: red;
+
+}
+.rightDescription{
+	width: 780px;
+	height: 800px;
+	background-color: green;
+	position: relative;
+	left: 250px;
+	bottom: 800px;
+
+}
+#title{
+	width: 1000px;
+	height: 50px;
+	background-color: white;
+	position: relative;
+	color: black;
+	padding: 0px 90px;
+	
+	bottom: 21px;
+
+}
+
+h2{
+	color: white;
+	background-color: lightblue;
+	width: 1000px;
+	height: 20px;
+	padding: 15px 30px ;
+	position: relative;
+	bottom: 43px;
+	
+}
+.topBar img{
+	position: relative; 
+	width: 75px; 
+	height: 75px;
+	bottom: 165px;
+} 
+
+#topLeft{
+	width: 205px;
+	height: 220px;
+	background-color: white;
+	border-bottom: 1px solid black;
+}
+#bottomLeft{
+	width: 205px;
+	height: 580px;
+	background-color: white;
+}
+#b1,#b2{
+	display: block;
+	position: relative;
+/*	left: 15px;
+*/	top: 25px;
+	font-size: 90%;
+}
+#b1{
+	background-color: blue;
+	color: white;
+	padding: 10px 40px 10px 40px;
+	border: 1px solid blue;
+	border-radius: 8px;
+
+
+}
+#b2{
+	background-color: orange;
+	color: white;
+	padding: 10px 32px 10px 32px;
+	border: 1px solid orange;
+	border-radius: 8px;
+	position: relative;
+	top: 30px;
+
+}
+#p1,#p2{
+	position: relative;
+	top: 20px;
+}
+
+#p1{
+	font-size: 95%;
+	font-weight: 600;
+/*		margin-left: 20px;
+*/
+}
+
+#p1 span{
+	color: red;
+}
+#p2{
+	font-size: 90%;
+/*	margin-left: 20px;
+*/		font-weight: 600;
+
+}
+
