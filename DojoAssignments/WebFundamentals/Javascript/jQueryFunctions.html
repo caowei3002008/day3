@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Functions Test</title>
+</head>
+<script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+		
+	$(document).ready(function(){
+
+		$('#button1').click(function(){
+			$('#p1').addClass('red');
+			alert('.click , You got it');
+		})
+		$('#button2').click(function(){
+			$('p').hide();
+			alert('.hide , You got it');
+		})
+		$('#button3').click(function(){
+			$('p').show();
+			alert('.show , You got it');
+		})
+		$('#button4').click(function(){
+			$('img').toggle("slow");
+			// alert('.toggle , You got it');
+		})
+		$('#button5').click(function(){
+			$('img').slideToggle(3000);
+			$('p').slideToggle(3000);
+			// alert('.slideToggle , You got it');
+		})
+
+		$('#button6').click(function(){
+			$('img').slideDown("slow");
+			$('p').slideDown("slow");
+			// alert('.slideToggle , You got it');
+		})
+
+		$('#button7').click(function(){
+			$('img').slideUp("slow");
+			$('p').slideUp("slow");
+			// alert('.slideToggle , You got it');
+		})
+
+		$('#button8').click(function(){
+		$('#p77').fadeIn(3000, function(){
+			$("#p777").fadeIn(2000);
+		});
+		
+			// alert('.slideToggle , You got it');
+		})
+
+		$('#p7').hover(function(){
+			$(this).addClass("fadeOut2");
+		},function(){
+			$(this).removeClass("fadeOut2");
+		
+
+
+		})
+
+		$('img').click(function(){
+
+			$(this).fadeOut(1000);
+		})
+
+
+		$('#button9').click(function(){
+
+			$(p7).after("<h1>.after got it</h1>");
+			$(p1).before("<h1>.before got it</h1>");
+		})
+
+		$('#p1').click(function(){
+			$('#p1').append("<strong>Hello </strong");
+
+
+			});
+		$('#p2').click(function(){
+			  $('#p2').html("<h2>1111111111</h2>");
+
+
+			});
+
+		$( '#search' ).keyup(function() {
+    var value = $( this ).val();
+    $( '#p99' ).text( value );
+  })
+  .keyup();
+
+
+
+	})
+
+
+</script>
+<style type="text/css">
+.red{
+	color:red;
+}
+img{
+	width: 400px;
+	height:400px;
+}
+	
+#p77{
+	width: 500px;
+	height:250px;
+	background-color: red;
+	position: relative;
+	bottom: 250px;
+
+	display: none;
+
+}
+span{
+		display: none;
+		font-size: 200%;
+		color: yellow;
+
+}
+
+.fadeOut2{
+	color:yellow;
+	background-color: black;
+}
+</style>
+
+<body>
+<div>AddClass</div>
+<button id="button1">AddClass</button>
+<p id="p1">Click the button to add class 'red' to this paragraph.</p>
+<p id="p2">Click the button to add class 'red' to this paragraph.</p>
+<p id="p3">Click the button to add class 'red' to this paragraph.</p>
+<p id="p4">Click the button to add class 'red' to this paragraph.</p>
+<p id="p5">Click the button to add class 'red' to this paragraph.</p>
+<p id="p6">Click the button to add class 'red' to this paragraph.</p>
+
+<img src="https://cdn.pixabay.com/photo/2016/02/20/17/05/dog-1212400_1280.jpg">
+
+
+<p id="p7">fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn <span id="fadeOut1">fadeIn</span> fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn fadeIn 
+<div id="p77"><span id="p777">Got it! fadeIn!</span></div>
+</p>
+
+<button id="button2">hide all the paragraph</button>
+<button id="button3">show all the paragraph</button>
+<button id="button4">toggle</button>
+<button id="button5">Slidetoggle</button>
+<button id="button6">SlideDown</button>
+<button id="button7">SlideUp</button>
+<button id="button8">fadeIn</button>
+<button id="button9">after&&beofre</button>
+<button id="button10"></button>
+
+
+<input type="search" name="search" id="search" value="search">
+<p id="p99"></p>
+
+
+
+</body>
+</html>

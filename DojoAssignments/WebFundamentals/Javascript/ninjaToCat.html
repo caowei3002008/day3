@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ninjaToCat</title>
+
+</head>
+<script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#ninja1').click(function(){
+
+			$('#cat1').fadeIn(1500);
+		})
+		$('#ninja2').click(function(){
+
+			$('#cat2').fadeIn(1500);
+		})
+		$('#ninja3').click(function(){
+
+			$('#cat3').fadeIn(1500);
+		})
+		$('#ninja4').click(function(){
+
+			$('#cat4').fadeIn(1500);
+		})
+		$('#ninja5').click(function(){
+
+			$('#cat5').fadeIn(1500);
+		})
+
+		$('button').click(function(){
+		$('#cat1').fadeOut(1500);
+		$('#cat2').fadeOut(1500);
+		$('#cat3').fadeOut(1500);
+		$('#cat4').fadeOut(1500);
+		$('#cat5').fadeOut(1500);
+		})
+
+
+	})
+
+
+
+
+
+
+</script>
+
+
+<style type="text/css">
+img{
+	width: 170px;
+	height: 50px;
+}
+#ninja1{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+#ninja2{
+position: absolute;
+	top: 62px;
+	left: 10px;
+}
+#ninja3{
+position: absolute;
+	top: 114px;
+	left: 10px;
+}
+#ninja4{
+position: absolute;
+	top: 166px;
+	left: 10px;
+}
+#ninja5{
+position: absolute;
+	top: 218px;
+	left: 10px;
+}
+
+#cat1{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	display: none;
+}
+#cat2{
+position: absolute;
+	top: 62px;
+	left: 10px;
+	display: none;
+
+}
+#cat3{
+position: absolute;
+	top: 114px;
+	left: 10px;
+	display: none;
+
+}
+#cat4{
+position: absolute;
+	top: 166px;
+	left: 10px;
+	display: none;
+
+}
+#cat5{
+position: absolute;
+	top: 218px;
+	left: 10px;
+	display: none;
+
+}
+
+button{
+
+	position: absolute;
+
+	top:280px;
+	left: 20px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+<img src="ninja0.png" id="ninja1">
+<img src="ninja1.png" id="ninja2">
+<img src="ninja2.png" id="ninja3">
+<img src="ninja3.png" id="ninja4">
+<img src="ninja4.png" id="ninja5">
+<img src="cat0.png" id = "cat1">
+<img src="cat1.png" id = "cat2">
+<img src="cat2.png" id = "cat3">
+<img src="cat3.png" id = "cat4">
+<img src="cat4.png" id = "cat5">
+
+<button>bakc to ninja</button>
+
+
+
+
+</body>
+</html>

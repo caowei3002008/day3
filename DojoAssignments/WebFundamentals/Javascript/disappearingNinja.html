@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disappearing Ninja</title>
+	</head>
+<script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+
+		$('#ninja1').click(function(){
+		$('#ninja1').hide();	
+		})
+		$('#ninja2').click(function(){
+		$('#ninja2').hide();	
+		})
+		$('#ninja3').click(function(){
+		$('#ninja3').hide();	
+		})
+		$('#ninja4').click(function(){
+		$('#ninja4').hide();	
+		})
+		$('#ninja5').click(function(){
+		$('#ninja5').hide();	
+		})
+		$('#ninja6').click(function(){
+		$('#ninja6').hide();	
+		})
+		$('#ninja7').click(function(){
+		$('#ninja7').hide();	
+		})
+		$('#ninja8').click(function(){
+		$('#ninja8').hide();	
+		})
+
+
+		$('button').click(function(){
+		$('img').show();	
+		})
+
+
+})
+
+
+</script>
+
+<style type="text/css">
+	
+	body{
+		width: 900px;
+		height: 500px;
+	}
+
+	img{
+		width: 180px;
+		height: 180px;
+		border: 2px solid black;
+		position: relative;
+		top: 0px;
+		right:0px;
+		bottom:0px;
+		left: 0px;
+	}
+
+</style>
+
+
+</head>
+<body>
+<h1>Jquery - assignment 1</h1>
+<div>
+<img src="ninja.jpg" id="ninja1">
+<img src="ninja.jpg" id="ninja2">
+<img src="ninja.jpg" id="ninja3">
+<img src="ninja.jpg" id="ninja4">
+<img src="ninja.jpg" id="ninja5">
+<img src="ninja.jpg" id="ninja6">
+<img src="ninja.jpg" id="ninja7">
+<img src="ninja.jpg" id="ninja8">
+
+<p><button>show</button></p>
+
+</div>
+</body>
+</html>
