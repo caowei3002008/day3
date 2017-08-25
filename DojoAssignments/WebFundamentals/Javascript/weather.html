@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather</title>
+</head>
+<script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$('button').click(function(){
+				var CityName1 = $('#city').val();
+				var cityName = $('#city').val();
+				// console.log(cityName);
+				
+				cityName = cityName.replace(/\s+/g, '_').toLowerCase();
+				// console.log(cityName);
+
+				var url = "http://api.openweathermap.org/data/2.5/weather?q=";
+				url +=cityName;
+				url +="&APPID=2cc761ca2ce874175b9a1096f4c9012b";
+
+				console.log(url);
+
+				$.get(url,function(res){
+
+					var tempK = res.main.temp;
+					// console.log(tempK);
+
+					var tempF = (tempK*(9/5))-459.67;
+					// console.log(tempF.toFixed(2));
+
+					var html1 = "<h1>";
+					html1+=CityName1;
+					html1+="</h1>";
+					html1+="<h2>Temperature: ";
+					html1+=tempF.toFixed(2);
+					html1+=" °F</h2>";
+
+
+
+					$('.result').html(html1);
+
+				})
+				
+
+
+				return false
+
+			})
+
+				// http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=2cc761ca2ce874175b9a1096f4c9012b
+				// http://api.openweathermap.org/data/2.5/weather?q=lincoln&APPID=2cc761ca2ce874175b9a1096f4c9012b
+				// http://api.openweathermap.org/data/2.5/weather?q=los_angeles&APPID=2cc761ca2ce874175b9a1096f4c9012b
+
+
+
+				return false
+
+		})
+
+
+</script>
+
+<body>
+<form>
+	<input type="text" name="search" placeholder="Input the City Name" id = "city">
+	<button>Search Weather</button>
+</form>
+
+<div class="result">
+	
+</div>
+
+</body>
+</html>

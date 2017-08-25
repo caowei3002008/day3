@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Card</title>
+</head>
+<script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('button').click(function(){
+				var firstName = $('#first_name').val();
+				var lastName = $('#last_name').val();
+				var description = $('#description').val();
+
+				var html = "<div class = 'firstPage'><div class = 'name'>";
+				html+= firstName+" "+lastName;
+				html+="<p>Click for description!</p>";
+				html+="</div><div class = 'des'>";
+				html+=description+"</div></div>";
+
+
+				$('#contactCard').append(html);
+
+				return false
+
+		});
+		     $(document).on('click', '.firstPage', function(){
+		     		$(this).children().toggle();
+
+         
+        
+     	});
+	});
+
+</script>
+
+<style type="text/css">
+body{
+	width: 1000px;
+	height: 800px;
+
+}
+form{
+	width: 350px;
+	height: 400px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#contactCard{
+	width: 400px;
+	height: 1800px;
+
+	display: inline-block;
+	margin: 20px;
+}
+.firstPage{
+	width: 400px;
+	height: 150px;
+	border:1px solid black;
+	overflow: hidden;
+	margin: 10px;
+	text-align:center;
+
+}
+
+.name{
+
+	position: relative;
+	top:30px;
+}
+.des{
+	margin: 5px;
+text-align:center;
+font-size: 110%;
+
+display: none;
+
+
+}
+	
+
+</style>
+<body>
+<form>
+		<label for="first_name">First Name: </label>
+		<input type="text" name="first_name" id="first_name">
+		<div>
+		<label for="last_name">Last Name: </label>
+		<input type="text" name="last_name" id="last_name">
+		</div>
+		<label for = "description">Description: </label>
+		<div><textarea name="description" id="description" rows = "10" cols = "50"></textarea></div>
+		<button>Add User</button>
+</form>
+
+<div id="contactCard">
+	
+
+</div>
+
+</body>
+</html>
