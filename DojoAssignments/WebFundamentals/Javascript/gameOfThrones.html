@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game of Thrones</title>
+<script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('img').click(function(){
+			var name = $(this).attr('alt');
+			console.log(name);
+			var otherName = "House Targaryen of King's Landing";
+			var htmlTextOther = '';
+
+		
+			 if(name == otherName){
+			 	htmlTextOther = "<p>Name: House Targaryen of King's Landing</p><p>Words: Fire and Blood</p><p>Titles: King of the Andals, the Rhoynar and the First Men, Lord of the Seven Kingdoms, Prince of Summerhall</p>";
+			 		$('.houseDetails').html(htmlTextOther);
+			 }
+			for(var i = 1; i<445;i++){
+			var url = 'https://anapioficeandfire.com/api/houses/'+i;
+			var titlesList = '';
+
+				$.get(url,function(res){
+
+					if(name == res.name){
+						console.log("OK");
+						console.log(res.name);
+						console.log(res.words);
+
+						for(var j = 0; j<res.titles.length-1;j++){
+							titlesList+=res.titles[j];
+							titlesList+=", ";
+							
+						}
+						titlesList+=res.titles[res.titles.length-1];
+						console.log(titlesList);
+
+						var htmlText = "<p>Name: ";
+						htmlText+= res.name;
+						htmlText+="</p>";
+						htmlText+= "<p>Words: ";
+						htmlText+= res.words;
+						htmlText+="</p>";
+						htmlText+= "<p>Titles: ";
+						htmlText+= titlesList;
+						htmlText+="</p>";	
+						console.log(htmlText);					
+						$('.houseDetails').html(htmlText);
+
+
+
+				}
+
+				},'json');
+				}
+
+				
+				})
+
+
+})
+	
+
+</script>
+
+<style type="text/css">
+	.houseImage{
+		width: 1200px;
+		height: 300px;
+		background-color: white;
+	}
+
+	.houseDetails{
+		width: 600px;
+		height: 300px;
+		position: relative;
+		left: 300px;
+		top: 20px;
+		border:1px solid black;		
+		
+	}
+
+	img{
+		width: 250px;
+		height: 220px;
+		display: inline-block;
+		padding-left: 40px;
+		padding-top: 60px;
+	}
+
+	.houseDetails{
+		position: relative;
+		left: 300px;
+		top: 20px;
+		border:1px solid black;
+		z-index: -1;
+		
+	}
+	#des{
+		width: 135px;
+		height: 40px;
+		position: absolute;
+		bottom: 438px;
+		left: 340px;
+		background-color: white;
+		font-size: 140%;
+		text-align:center;
+		
+		
+
+	}
+	p{
+		font-size: 120%;
+		text-align:center;
+
+		margin-left:10px;
+		margin-right: 10px; 
+		position: relative;
+		top: 30px;
+	}
+
+</style>
+</head>
+<body>
+<div class="houseImage">
+
+	<img id="baratheon" src="gameofthrones/baratheon.png" alt="House Baratheon of Storm's End">
+	<img id="lannister" src="gameofthrones/lannister.jpg" alt="House Lannister of Casterly Rock">
+	<img id="stark" src="gameofthrones/stark.jpg" alt="House Stark of Winterfell">
+	<img id="targaryen" src="gameofthrones/targaryen.jpg" alt="House Targaryen of King's Landing">
+</div>
+	<div id="des">House Details</div>
+<div class="houseDetails">
+</div>
+
+</body>
+</html>
